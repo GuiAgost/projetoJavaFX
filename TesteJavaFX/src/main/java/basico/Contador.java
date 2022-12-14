@@ -64,7 +64,7 @@ public class Contador extends Application {
 
         //String caminhoDoCss = getClass().getResource("/resources/Contador.css").toExternalForm();
         System.out.println("classpath=" + System.getProperty("java.class.path"));
-        String caminhoCss = getClass().getResource("/basico/Contador").toExternalForm();
+        String caminhoCss = getClass().getResource("/basico/Contador.css").toExternalForm();
 
         Scene cenaPrincipal = new Scene(boxConteudo, 400, 400);
         cenaPrincipal.getStylesheets().add(caminhoCss);
