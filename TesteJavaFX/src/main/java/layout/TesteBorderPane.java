@@ -5,7 +5,6 @@ import javafx.scene.layout.BorderPane;
 public class TesteBorderPane extends BorderPane {
 
     public TesteBorderPane(){
-
         Caixa c1 = new Caixa().comTexto("Topo");
         setTop(c1);
         Caixa c2 = new Caixa().comTexto("Esquerda");
@@ -16,7 +15,5 @@ public class TesteBorderPane extends BorderPane {
         setBottom(c4);
         Caixa c5 = new Caixa().comTexto("Centro");
         setCenter(c5);
-
     }
-
 }
