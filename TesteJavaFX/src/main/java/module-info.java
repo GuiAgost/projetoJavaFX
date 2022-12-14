@@ -4,5 +4,7 @@ module com.example.testejavafx {
 
 
     opens basico to javafx.fxml;
+    opens layout to javafx.fxml;
     exports basico;
+    exports layout;
 }

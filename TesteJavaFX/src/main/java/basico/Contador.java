@@ -39,7 +39,6 @@ public class Contador extends Application {
         botaoDecremento.setOnAction(e -> {
             contador--;
             atualizarLabelNumero(labelNumero);
-
         });
 
         Button botaoIncremento = new Button("+");
