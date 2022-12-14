@@ -6,7 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -31,9 +30,7 @@ public class AppLayout extends Application {
         anchorPane.setOnAction(e -> {
             Parent raiz = new TesteAnchorPane();
             Scene principal = new Scene(raiz, 600, 400);
-            raiz.setOnMousePressed(click -> {
-                janela.setScene(cenaMenu);
-            });
+            raiz.setOnMousePressed(clickRight -> janela.setScene(cenaMenu));
             janela.setScene(principal);
             janela.setTitle("Wizard :: AnchorPane");
         });
@@ -42,9 +39,7 @@ public class AppLayout extends Application {
         borderPane.setOnAction(e -> {
             Parent raiz = new TesteBorderPane();
             Scene principal = new Scene(raiz, 600, 400);
-            raiz.setOnMousePressed(click -> {
-                janela.setScene(cenaMenu);
-            });
+            raiz.setOnMousePressed(clickRight -> janela.setScene(cenaMenu));
             janela.setScene(principal);
             janela.setTitle("Wizard :: BorderPane");
         });
@@ -53,9 +48,7 @@ public class AppLayout extends Application {
         flowPane.setOnAction(e -> {
             Parent raiz = new TesteFlowPane();
             Scene principal = new Scene(raiz, 600, 400);
-            raiz.setOnMousePressed(click -> {
-                janela.setScene(cenaMenu);
-            });
+            raiz.setOnMousePressed(clickRight -> janela.setScene(cenaMenu));
             janela.setScene(principal);
             janela.setTitle("Wizard :: FlowPane");
         });
@@ -64,9 +57,7 @@ public class AppLayout extends Application {
         gridPane.setOnAction(e -> {
             Parent raiz = new TesteGridPane();
             Scene principal = new Scene(raiz, 600, 400);
-            raiz.setOnMousePressed(click -> {
-                janela.setScene(cenaMenu);
-            });
+            raiz.setOnMousePressed(clickRight -> janela.setScene(cenaMenu));
             janela.setScene(principal);
             janela.setTitle("Wizard :: GridPane");
         });
@@ -75,9 +66,7 @@ public class AppLayout extends Application {
         stackPane.setOnAction(e -> {
             Parent raiz = new TesteStackPane();
             Scene principal = new Scene(raiz, 600, 400);
-            raiz.setOnMousePressed(click -> {
-                janela.setScene(cenaMenu);
-            });
+            raiz.setOnMousePressed(clickRight -> janela.setScene(cenaMenu));
             janela.setScene(principal);
             janela.setTitle("Wizard :: StackPane");
         });
@@ -86,13 +75,10 @@ public class AppLayout extends Application {
         tilePane.setOnAction(e -> {
             Parent raiz = new TesteTilePane();
             Scene principal = new Scene(raiz, 600, 400);
-            raiz.setOnMousePressed(click -> {
-                janela.setScene(cenaMenu);
-            });
+            raiz.setOnMousePressed(clickRight -> janela.setScene(cenaMenu));
             janela.setScene(principal);
             janela.setTitle("Wizard :: StackPane");
         });
-
 
         VBox box = new VBox(); // Botão vertical
         //HBox box = new HBox(); // Botão horizontal
