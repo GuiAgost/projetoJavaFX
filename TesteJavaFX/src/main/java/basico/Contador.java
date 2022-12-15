@@ -9,6 +9,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class Contador extends Application {
 
     private int contador = 0;
@@ -27,7 +29,7 @@ public class Contador extends Application {
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         Label labelTitulo = new Label("Contador.css");
         labelTitulo.getStyleClass().add("titulo");
 
@@ -64,7 +66,7 @@ public class Contador extends Application {
 
         //String caminhoDoCss = getClass().getResource("/resources/Contador.css").toExternalForm();
         System.out.println("classpath=" + System.getProperty("java.class.path"));
-        String caminhoCss = getClass().getResource("/basico/Contador.css").toExternalForm();
+        String caminhoCss = Objects.requireNonNull(getClass().getResource("/Contador.css")).toExternalForm();
 
         Scene cenaPrincipal = new Scene(boxConteudo, 400, 400);
         cenaPrincipal.getStylesheets().add(caminhoCss);
