@@ -6,8 +6,10 @@ module com.example.testejavafx {
     opens basico to javafx.fxml;
     opens layout to javafx.fxml;
     opens fxml to javafx.fxml;
+    opens calculadora to javafx.fxml;
 //    opens calculadora to javafx.fxml;
     exports basico;
     exports layout;
     exports fxml;
+    exports calculadora;
 }
